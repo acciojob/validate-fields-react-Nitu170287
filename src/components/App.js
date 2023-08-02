@@ -10,7 +10,7 @@ const [error, setError] = useState("")
 
 function handleLoginBtn(){
     if(!username || !password){
-      setError("Both username and password are required")
+      setError("Both username and password are required.")
     }
 }
 
