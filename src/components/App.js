@@ -29,9 +29,10 @@ const App = () => {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <p id="errorMessage" style={{ color: "red" }}>
+      {error ? <p id="errorMessage" style={{ color: "red" }}>
         {error}
-      </p>
+      </p> : null} 
+      
       <button onClick={handleLoginBtn}>Login</button>
     </div>
   );
